@@ -14,8 +14,8 @@ export default defineConfig({
     }
   },
   // 静态资源基础路径 base: './' || '',
-  // base: process.env.NODE_ENV === 'production' ? './' : '/',
-  base: '/',
+  base: process.env.NODE_ENV === 'production' ? './' : '/',
+  // base: '/',
   build: {
     target: 'esnext',
     outDir: 'dist',

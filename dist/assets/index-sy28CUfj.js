@@ -1,4 +1,4 @@
-import{defineComponent as mc,ref as Oe,onMounted as gc,onUnmounted as _c,openBlock as vc,createElementBlock as xc,Fragment as Mc,createElementVNode as Eo}from"vue";import{_ as Sc}from"./index-BBqgE32E.js";/**
+import{defineComponent as mc,ref as Oe,onMounted as gc,onUnmounted as _c,openBlock as vc,createElementBlock as xc,Fragment as Mc,createElementVNode as Eo}from"vue";import{_ as Sc}from"./index-OA4kFpv0.js";/**
  * @license
  * Copyright 2010-2024 Three.js Authors
  * SPDX-License-Identifier: MIT
