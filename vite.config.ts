@@ -13,4 +13,16 @@ export default defineConfig({
       "@": resolve(__dirname, "./src")
     }
   },
+  build: {
+    target: 'esnext',
+    outDir: 'dist',
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+        },
+      },
+    },
+  },
 })
