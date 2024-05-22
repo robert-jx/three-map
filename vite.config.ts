@@ -13,16 +13,18 @@ export default defineConfig({
       "@": resolve(__dirname, "./src")
     }
   },
-  build: {
-    target: 'esnext',
-    outDir: 'dist',
-    rollupOptions: {
-      external: ['vue'],
-      output: {
-        globals: {
-          vue: 'Vue',
-        },
-      },
-    },
-  },
+  // 静态资源基础路径 base: './' || '',
+  base: process.env.NODE_ENV === 'production' ? './' : '/',
+  // build: {
+  //   target: 'esnext',
+  //   outDir: 'dist',
+  //   rollupOptions: {
+  //     external: ['vue'],
+  //     output: {
+  //       globals: {
+  //         vue: 'Vue',
+  //       },
+  //     },
+  //   },
+  // },
 })
