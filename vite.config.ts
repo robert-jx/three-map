@@ -5,6 +5,9 @@ import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // 静态资源基础路径 base: './' || '',
+  // base: process.env.NODE_ENV === 'production' ? './' : '/',
+  base: './',
   plugins: [vue()],
   // ↓解析配置
   resolve: {
@@ -13,8 +16,6 @@ export default defineConfig({
       "@": resolve(__dirname, "./src")
     }
   },
-  // 静态资源基础路径 base: './' || '',
-  base: process.env.NODE_ENV === 'production' ? './' : '/',
   // base: '/',
   build: {
     target: 'esnext',
