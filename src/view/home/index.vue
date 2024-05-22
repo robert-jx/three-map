@@ -41,7 +41,7 @@ const initLight = () => {
 //加载json数据
 const loadJson = () => {
     const loader = new THREE.FileLoader();
-    loader.load('/src/assets/chinese.json', (data: any) => {
+    loader.load('/chinese.json', (data: any) => {
         const jsondata = JSON.parse(data);
         generateGeometry(jsondata)
     })
